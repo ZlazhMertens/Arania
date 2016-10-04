@@ -1,0 +1,116 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grafico1(int xa, int ya, int dx, int dy)
+        {
+            Graphics gr = pictureBox1.CreateGraphics();
+            Pen pen = new Pen(Color.Black);
+            gr.Clear(Color.White);
+            gr.DrawLine(pen, xa + 9 * dx, ya + 4 * dy, xa + 9 * dx, ya + 3 * dy);
+            gr.DrawLine(pen, xa + 9 * dx, ya + 3 * dy, xa + 10 * dx, ya + 4 * dy);
+            gr.DrawLine(pen, xa + 10 * dx, ya + 4 * dy, xa + 10 * dx, ya + 5 * dy);
+            gr.DrawLine(pen, xa + 10 * dx, ya + 5 * dy, xa + 12 * dx, ya + 2 * dy);
+            gr.DrawLine(pen, xa + 12 * dx, ya + 2 * dy, xa + 13 * dx, ya + 3 * dy);
+            gr.DrawLine(pen, xa + 13 * dx, ya + 3 * dy, xa + 13 * dx, ya + 2 * dy);
+            gr.DrawLine(pen, xa + 13 * dx, ya + 2 * dy, xa + 11 * dx, ya);
+            gr.DrawLine(pen, xa + 11 * dx, ya, xa + 14 * dx, ya + 2 * dy);
+            gr.DrawLine(pen, xa + 14 * dx, ya + 2 * dy, xa + 13 * dx, ya + 4 * dy);
+            gr.DrawLine(pen, xa + 13 * dx, ya + 4 * dy, xa + 12 * dx, ya + 3 * dy);
+            gr.DrawLine(pen, xa + 12 * dx, ya + 3 * dy, xa + 11 * dx, ya + 5 * dy);
+            gr.DrawLine(pen, xa + 11 * dx, ya + 5 * dy, xa + 12 * dx, ya + 4 * dy);
+            gr.DrawLine(pen, xa + 12 * dx, ya + 4 * dy, xa + 14 * dx, ya + 6 * dy);
+            gr.DrawLine(pen, xa + 14 * dx, ya + 6 * dy, xa + 15 * dx, ya + 5 * dy);
+            gr.DrawLine(pen, xa + 15 * dx, ya + 5 * dy, xa + 15 * dx, ya + dy);
+            gr.DrawLine(pen, xa + 15 * dx, ya + dy, xa + 16 * dx, ya + 3 * dy);
+            gr.DrawLine(pen, xa + 16 * dx, ya + 3 * dy, xa + 16 * dx, ya + 5 * dy);
+            gr.DrawLine(pen, xa + 16 * dx, ya + 5 * dy, xa + 14 * dx, ya + 7 * dy);
+            gr.DrawLine(pen, xa + 14 * dx, ya + 7 * dy, xa + 12 * dx, ya + 5 * dy);
+            gr.DrawLine(pen, xa + 12 * dx, ya + 5 * dy, xa + 11 * dx, ya + 6 * dy);
+            gr.DrawLine(pen, xa + 11 * dx, ya + 6 * dy, xa + 12 * dx, ya + 6 * dy);
+            gr.DrawLine(pen, xa + 12 * dx, ya + 6 * dy, xa + 16 * dx, ya + 10 * dy);
+            gr.DrawLine(pen, xa + 16 * dx, ya + 10 * dy, xa + 16 * dx, ya + 13 * dy);
+            gr.DrawLine(pen, xa + 16 * dx, ya + 13 * dy, xa + 14 * dx, ya + 15 * dy);
+            gr.DrawLine(pen, xa + 14 * dx, ya + 15 * dy, xa + 15 * dx, ya + 13 * dy);
+            gr.DrawLine(pen, xa + 15 * dx, ya + 13 * dy, xa + 15 * dx, ya + 10 * dy);
+            gr.DrawLine(pen, xa + 15 * dx, ya + 10 * dy, xa + 12 * dx, ya + 7 * dy);
+            gr.DrawLine(pen, xa + 12 * dx, ya + 7 * dy, xa + 11 * dx, ya + 7 * dy);
+            gr.DrawLine(pen, xa + 11 * dx, ya + 7 * dy, xa + 13 * dx, ya + 9 * dy);
+            gr.DrawLine(pen, xa + 13 * dx, ya + 9 * dy, xa + 13 * dx, ya + 13 * dy);
+            gr.DrawLine(pen, xa + 13 * dx, ya + 13 * dy, xa + 11 * dx, ya + 16 * dy);
+            gr.DrawLine(pen, xa + 11 * dx, ya + 16 * dy, xa + 12 * dx, ya + 13 * dy);
+            gr.DrawLine(pen, xa + 12 * dx, ya + 13 * dy, xa + 12 * dx, ya + 9 * dy);
+            gr.DrawLine(pen, xa + 12 * dx, ya + 9 * dy, xa + 10 * dx, ya + 7 * dy);
+            gr.DrawLine(pen, xa + 10 * dx, ya + 7 * dy, xa + 11 * dx, ya + 9 * dy);
+            gr.DrawLine(pen, xa + 11 * dx, ya + 9 * dy, xa + 8 * dx, ya + 13 * dy);
+            gr.DrawLine(pen, xa + 8 * dx, ya + 13 * dy, xa + 5 * dx, ya + 9 * dy);
+            gr.DrawLine(pen, xa + 5 * dx, ya + 9 * dy, xa + 6 * dx, ya + 7 * dy);
+            gr.DrawLine(pen, xa + 6 * dx, ya + 7 * dy, xa + 4 * dx, ya + 9 * dy);
+            gr.DrawLine(pen, xa + 4 * dx, ya + 9 * dy, xa + 4 * dx, ya + 13 * dy);
+            gr.DrawLine(pen, xa + 4 * dx, ya + 13 * dy, xa + 5 * dx, ya + 16 * dy);
+            gr.DrawLine(pen, xa + 5 * dx, ya + 16 * dy, xa + 3 * dx, ya + 13 * dy);
+            gr.DrawLine(pen, xa + 3 * dx, ya + 13 * dy, xa + 3 * dx, ya + 9 * dy);
+            gr.DrawLine(pen, xa + 3 * dx, ya + 9 * dy, xa + 5 * dx, ya + 7 * dy);
+            gr.DrawLine(pen, xa + 5 * dx, ya + 7 * dy, xa + 4 * dx, ya + 7 * dy);
+            gr.DrawLine(pen, xa + 4 * dx, ya + 7 * dy, xa + dx, ya + 10 * dy);
+            gr.DrawLine(pen, xa + dx, ya + 10 * dy, xa + dx, ya + 13 * dy);
+            gr.DrawLine(pen, xa + dx, ya + 13 * dy, xa + 2 * dx, ya + 15 * dy);
+            gr.DrawLine(pen, xa + 2 * dx, ya + 15 * dy, xa , ya + 13 * dy);
+            gr.DrawLine(pen, xa , ya + 13 * dy, xa , ya + 10 * dy);
+            gr.DrawLine(pen, xa , ya + 10 * dy, xa + 4 * dx, ya + 6 * dy);
+            gr.DrawLine(pen, xa + 4 * dx, ya + 6 * dy, xa + 5 * dx, ya + 6 * dy);
+            gr.DrawLine(pen, xa + 5 * dx, ya + 6 * dy, xa + 4 * dx, ya + 5 * dy);
+            gr.DrawLine(pen, xa + 4 * dx, ya + 5 * dy, xa + 2 * dx, ya + 7 * dy);
+            gr.DrawLine(pen, xa + 2 * dx, ya + 7 * dy, xa , ya + 5 * dy);
+            gr.DrawLine(pen, xa , ya + 5 * dy, xa , ya + 3 * dy);
+            gr.DrawLine(pen, xa , ya + 3 * dy, xa + dx, ya + dy);
+            gr.DrawLine(pen, xa + dx, ya + dy, xa + dx, ya + 5 * dy);
+            gr.DrawLine(pen, xa + dx, ya + 5 * dy, xa + 2 * dx, ya + 6 * dy);
+            gr.DrawLine(pen, xa + 2 * dx, ya + 6 * dy, xa + 4 * dx, ya + 4 * dy);
+            gr.DrawLine(pen, xa + 4 * dx, ya + 4 * dy, xa + 5 * dx, ya + 5 * dy);
+            gr.DrawLine(pen, xa + 5 * dx, ya + 5 * dy, xa + 4 * dx, ya + 3 * dy);
+            gr.DrawLine(pen, xa + 4 * dx, ya + 3 * dy, xa + 3 * dx, ya + 4 * dy);
+            gr.DrawLine(pen, xa + 3 * dx, ya + 4 * dy, xa + 2 * dx, ya + 2 * dy);
+            gr.DrawLine(pen, xa + 2 * dx, ya + 2 * dy, xa + 5 * dx, ya);
+            gr.DrawLine(pen, xa + 5 * dx, ya , xa + 3 * dx, ya + 2 * dy);
+            gr.DrawLine(pen, xa + 3 * dx, ya + 2 * dy, xa + 3 * dx, ya + 3 * dy);
+            gr.DrawLine(pen, xa + 3 * dx, ya + 3 * dy, xa + 4 * dx, ya + 2 * dy);
+            gr.DrawLine(pen, xa + 4 * dx, ya + 2 * dy, xa + 6 * dx, ya + 5 * dy);
+            gr.DrawLine(pen, xa + 6 * dx, ya + 5 * dy, xa + 6 * dx, ya + 4 * dy);
+            gr.DrawLine(pen, xa + 6 * dx, ya + 4 * dy, xa + 7 * dx, ya + 3 * dy);
+            gr.DrawLine(pen, xa + 7 * dx, ya + 3 * dy, xa + 7 * dx, ya + 4 * dy);
+            gr.DrawLine(pen, xa + 7 * dx, ya + 4 * dy, xa + 9 * dx, ya + 4 * dy);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            grafico1(80,0,30,30);
+        }
+
+    }
+}
